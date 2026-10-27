@@ -963,6 +963,7 @@ body {
     display: block;
     width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
 .about_contant {
@@ -1016,17 +1017,202 @@ body {
 .years {
     font-family: "Cormorant Garamond", serif;
     font-weight: 400;
-    font-size: 37px;
+    font-size: 40px;
     color: #000000;
     line-height: 55.5px;
     margin-left: 5px;
+    margin-top: 40px;
 }
 
 .years_text {
     font-family: "Manrope", sans-serif;
     font-weight: 400;
     color: #555555;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 13.5px;
     margin-left: 5px;
+}
+
+.video-section {
+    position: relative;
+    width: 100%;
+    max-width: 1300px;
+    min-height: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 70px;
+    padding-bottom: 70px;
+}
+
+/* Видео на заднем плане */
+.video-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Затемнение видео */
+.video-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+/* Текст поверх видео */
+.video-content {
+    position: absolute;
+    z-index: 2;
+    left: 80px;
+    right: 80px;
+    bottom: 20px;
+
+    color: #fff;
+}
+
+.video-label {
+    display: block;
+    margin-bottom: 24px;
+    color: #89048F;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  -webkit-text-stroke: 0.15px #FFFFFF;
+}
+
+.video-content h2 {
+    max-width: 1000px;
+    margin: 0;
+    font-family: "Cormorant Garamond", serif;
+    color: #FFFFFF;
+    line-height: 55.5px;
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 400;
+    line-height: 1;
+}
+
+.process {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 100px 0 80px;
+  margin-top: 140px;
+  background: #000;
+  color: #fff;
+}
+
+/* Заголовок */
+.process__header {
+  margin-bottom: 90px;
+}
+
+.process__label {
+  display: block;
+  margin-bottom: 32px;
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    font-size: 1px;
+    letter-spacing: 1.8px;
+    color: #89048F;
+    text-transform: uppercase;
+}
+
+.process__title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  margin: 0;
+
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(48px, 6vw, 76px);
+  font-weight: 400;
+  line-height: 0.82;
+}
+
+.process__title span {
+  color: #a000a0;
+  font-style: italic;
+}
+
+/* Три колонки */
+.process__steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  border-top: 1px solid #303030;
+}
+
+.process__step {
+  min-height: 240px;
+  padding: 44px 38px 0 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.process__step + .process__step {
+  border-left: 1px solid #303030;
+  padding-left: 38px;
+}
+
+.process__number {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  color: #a000a0;
+}
+
+.process__info h3 {
+  margin: 0 0 18px;
+
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.process__info p {
+  max-width: 300px;
+  margin: 0;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #c6c6c6;
+}
+
+/* Планшеты и телефоны */
+@media (max-width: 768px) {
+  .process {
+    padding: 70px 24px 50px;
+    box-sizing: border-box;
+  }
+
+  .process__header {
+    margin-bottom: 60px;
+  }
+
+  .process__steps {
+    grid-template-columns: 1fr;
+  }
+
+  .process__step {
+    min-height: 190px;
+    padding: 28px 0;
+    gap: 40px;
+  }
+
+  .process__step + .process__step {
+    border-left: none;
+    border-top: 1px solid #303030;
+    padding-left: 0;
+  }
+
+  .process__info h3 {
+    font-size: 30px;
+  }
 }
