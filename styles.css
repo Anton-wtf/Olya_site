@@ -1224,30 +1224,30 @@ body {
 
 .contacts_content {
     padding-top: 140px;
-     display: flex;
-  flex-direction: column;
-
-  justify-content: center; /* по вертикали */
-  align-items: center;     /* по горизонтали */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .contacts_p {
     font-family: 'Manrope', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 15px;
     line-height: 13px;
     color: #FFFFFF;
+    padding-top: 30px;
 }
 
 .contacts_h1 {
     font-family: 'Cormorant Garamond', sans-serif;
-    font-size: 65px;
-    line-height: 50px;
+    font-size: 100px;
+    line-height: 70px;
     font-weight: 500;
     letter-spacing: -2.92px;
     color: #FFFFFF;
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 85px;
     margin-top: 70px;
 }
 
@@ -1265,6 +1265,7 @@ body {
     border-bottom: 1px solid #e9dede;
     display: flex;
     align-items: center;
+    margin-bottom: 80px;
 }
 
 
@@ -1272,4 +1273,87 @@ body {
     margin-left: 30px;
     width: 20px;
     height: 20px;
+}
+
+.contacts_cards {
+    border-top: 2px solid rgba(233, 222, 222, 0.5);
+    margin-top: 35px;
+    padding-bottom: 35px;
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact_card_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact_card_footer p {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16.2px;
+    letter-spacing: 1.35px;
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+
+.contact_card_footer a {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21.6px;
+    color: #FFFFFF;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: ;
+}
+
+.footer p {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 13.5px;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.footer a {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 13.5px;
+    color: #FFFFFF;
+    opacity: 0.6;
+    flex-shrink: 0
+}
+
+.logo_footer h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 450;
+    font-size: 50px;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+    line-height: 1;
+}
+
+.logo_footer h2 {
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 13.5px;
+    letter-spacing: 1.62px;
+    color: #89048F;
+}
+
+.logo_footer h1,
+.logo_footer h2 {
+    opacity: 0.6;
+    margin: 0;
 }
