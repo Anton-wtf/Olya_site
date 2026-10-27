@@ -1312,7 +1312,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: ;
+    padding: 30px 30px;
 }
 
 .footer p {
